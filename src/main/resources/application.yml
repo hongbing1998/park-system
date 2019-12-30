@@ -1,0 +1,16 @@
+#数据库连接
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
+  datasource:
+    url: jdbc:mysql://localhost:3306/park?characterEncoding=utf8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root1998
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#服务器端口
+server:
+  port: 80

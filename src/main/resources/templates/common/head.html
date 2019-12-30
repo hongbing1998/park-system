@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="commonHead(title)">
+    <meta charset="utf-8"/>
+    <meta content="webkit|ie-comp|ie-stand" name="renderer"/>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+          name="viewport"/>
+    <meta content="no-siteapp" http-equiv="Cache-Control"/>
+    <link rel="stylesheet" th:href="@{/h-ui/css/H-ui.min.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/h-ui.admin/css/H-ui.admin.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/lib/Hui-iconfont/1.0.8/iconfont.css}" type="text/css"/>
+    <link id="skin" rel="stylesheet" th:href="@{/h-ui.admin/skin/default/skin.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/h-ui.admin/css/style.css}" type="text/css"/>
+    <title th:text="${title}">Title</title>
+</head>
+</html>
