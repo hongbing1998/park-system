@@ -46,7 +46,7 @@ public class UserController {
     @RequestMapping("/logout")
     public String logout(HttpSession session) {
         session.removeAttribute("LogUser");
-        return "/join";
+        return "join";
     }
 
     //注册用户
@@ -80,7 +80,7 @@ public class UserController {
         if (oldpassword.equals(userinfo.getPassword())) {
             userinfo.setPassword(newpassword);
             if (userService.updateUserPwd(userinfo)) {
-                return "redirect:/user/logout";
+                return "redirect:user/logout";
             }
         } else {
             model.addAttribute("usermsg", "原密码错误");
